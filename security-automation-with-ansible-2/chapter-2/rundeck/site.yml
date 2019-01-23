@@ -1,7 +1,7 @@
 - name: This sets up an httpd webserver
   hosts: 172.16.1.114
   become: yes
-  become_user: apekshasharma
+  become_user: root
   tasks:
   - name: Install apache packages 
     yum:
