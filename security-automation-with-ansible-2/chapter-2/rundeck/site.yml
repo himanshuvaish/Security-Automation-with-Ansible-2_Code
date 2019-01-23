@@ -7,6 +7,8 @@
     yum:
       name: httpd
       state: present
+    become_user: apekshasharma
+    become: yes
   - name: ensure httpd is running
     service:
       name: httpd 
